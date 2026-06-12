@@ -1,6 +1,6 @@
-import { CaseCategory } from '../types';
+import type { CaseCategory } from '../types';
 
-interface CategoryInfo {
+export interface CategoryInfo {
   label: string;
   icon: string;
   color: string;

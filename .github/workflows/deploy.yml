@@ -28,9 +28,11 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: lawyer-app
+        env:
+          VITE_BASE_URL: /-k/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: lawyer-app/build
+          publish_dir: lawyer-app/dist

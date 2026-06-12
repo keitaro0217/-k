@@ -1,10 +1,4 @@
-import { Case, Client, ConsultationNote } from '../types';
-
-export const initialClients: Client[] = [
-  { id: 'c1', name: '山田 太郎', phone: '090-1234-5678', email: 'yamada@example.com', createdAt: '2026-05-01' },
-  { id: 'c2', name: '鈴木 花子', phone: '080-9876-5432', email: 'suzuki@example.com', createdAt: '2026-05-15' },
-  { id: 'c3', name: '株式会社ABC', phone: '03-1111-2222', email: 'info@abc.co.jp', createdAt: '2026-04-10' },
-];
+import type { Case, ConsultationNote } from '../types';
 
 export const initialCases: Case[] = [
   {
@@ -91,7 +85,8 @@ export const initialConsultations: ConsultationNote[] = [
     clientName: '田中 次郎',
     date: '2026-06-10',
     topic: '相続放棄の手続きについて',
-    advice: '相続開始を知った日から3か月以内に家庭裁判所へ申述が必要。プラスの財産より負債が多い場合は放棄が有利。',
+    advice:
+      '相続開始を知った日から3か月以内に家庭裁判所へ申述が必要。プラスの財産より負債が多い場合は放棄が有利。',
     followUp: '戸籍謄本・相続関係図の準備を依頼',
   },
   {
@@ -99,7 +94,8 @@ export const initialConsultations: ConsultationNote[] = [
     clientName: '佐藤 三郎',
     date: '2026-06-11',
     topic: '未払い賃金の請求',
-    advice: '労働基準法違反に該当。労働基準監督署への申告または民事訴訟（少額訴訟）が選択肢。証拠（給与明細・タイムカード）の保全が急務。',
+    advice:
+      '労働基準法違反に該当。労働基準監督署への申告または民事訴訟（少額訴訟）が選択肢。証拠（給与明細・タイムカード）の保全が急務。',
     followUp: '証拠書類の確認後に方針決定',
   },
 ];

@@ -1,4 +1,5 @@
-export type CaseStatus = '進行中' | '完了' | '保留中' | '新規';
+export type CaseStatus = '新規' | '進行中' | '保留中' | '完了';
+
 export type CaseCategory =
   | 'court'
   | 'consultation'
@@ -27,15 +28,6 @@ export interface Case {
   updatedAt: string;
   nextAction?: string;
   nextActionDate?: string;
-}
-
-export interface Document {
-  id: string;
-  caseId: string;
-  title: string;
-  type: string;
-  content: string;
-  createdAt: string;
 }
 
 export interface ConsultationNote {
