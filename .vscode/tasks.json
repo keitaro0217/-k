@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "lawyer-app/",
+      "label": "npm: start - lawyer-app",
+      "detail": "react-scripts start",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "react",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "file": 1,
+          "location": 2,
+          "message": 3
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting the development server",
+          "endsPattern": "Compiled successfully"
+        }
+      }
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "lawyer-app/",
+      "label": "npm: build - lawyer-app",
+      "detail": "react-scripts build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "path": "lawyer-app/",
+      "label": "npm: test - lawyer-app",
+      "detail": "react-scripts test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

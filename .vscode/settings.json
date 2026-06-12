@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "eslint.workingDirectories": ["lawyer-app"],
+  "files.exclude": {
+    "lawyer-app/node_modules": true,
+    "lawyer-app/build": true
+  }
+}
